@@ -79,6 +79,8 @@ Les couleurs sont définies dans les variables CSS au début de `style.css`. Mod
 - ✅ 100% responsive (mobile, tablette, desktop)
 - ✅ Optimisé SEO
 
-## 📄 Licence
 
-© 2025 Bertrand GAKIZA. Tous droits réservés.
+
+© 2025 Bertrand GAKIZA.
+# portofolio
+
