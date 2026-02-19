@@ -13,8 +13,8 @@ portefolio/
 ├── index.html        # Page principale du portfolio
 ├── style.css         # Feuille de styles (thème dark premium)
 ├── script.js         # Interactions et animations JavaScript
-├── profile.jpg       # Photo de profil (à remplacer par votre photo)
-├── cv_bertrand_gakiza.pdf  # CV à télécharger (à ajouter)
+├── bertrand.png      # Photo de profil
+├── CV_Bertrand_GAKIZA.pdf  # CV à télécharger
 └── README.md         # Ce fichier
 ```
 
@@ -46,10 +46,10 @@ git push -u origin main
 ## 📝 Personnalisation
 
 ### Photo de profil
-Remplacez le fichier `profile.jpg` par votre propre photo (format carré recommandé, minimum 400x400px).
+Utilisez le fichier `bertrand.png` ou remplacez-le par votre propre photo.
 
 ### CV PDF
-Ajoutez votre CV au format PDF avec le nom `cv_bertrand_gakiza.pdf` dans le dossier racine.
+Le CV est accessible via le fichier `CV_Bertrand_GAKIZA.pdf`.
 
 ### Couleurs
 Les couleurs sont définies dans les variables CSS au début de `style.css`. Modifiez les variables `--accent-primary` et `--accent-secondary` pour changer le thème.
@@ -81,6 +81,4 @@ Les couleurs sont définies dans les variables CSS au début de `style.css`. Mod
 
 
 
-© 2025 Bertrand GAKIZA.
-# portofolio
-
+© 2025 Bertrand GAKIZA
