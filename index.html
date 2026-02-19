@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Bertrand GAKIZA — Data Analyst & Data Scientist. Découvrez mes projets, compétences et expériences en analyse de données, machine learning et visualisation.">
+    <meta name="keywords"
+        content="Data Analyst, Data Scientist, Portfolio, Python, SQL, Machine Learning, Power BI, Tableau, Bertrand GAKIZA">
+    <meta name="author" content="Bertrand GAKIZA">
+    <title>Bertrand GAKIZA — Data Analyst & Data Scientist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>BG<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#education" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="hero-greeting">Bonjour, je suis</p>
+                    <h1 class="hero-name">Bertrand <span class="highlight">GAKIZA</span></h1>
+                    <div class="hero-title-wrapper">
+                        <span class="hero-title-prefix">&#x276F;</span>
+                        <h2 class="hero-title" id="typingText"></h2>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Fort de deux ans d'expérience, je suis animé par la volonté de transformer
+                        des données complexes en <strong>solutions concrètes, utiles et actionnables</strong>.
+                        Ma formation en statistique, combinée à mes compétences en machine learning et analyse avancée,
+                        me permet d'intervenir sur des projets variés et de créer de la valeur à partir des données.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Voir mes projets
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Me contacter
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="2">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Ans d'expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="image-wrapper">
+                        <div class="image-decoration"></div>
+                        <img src="bertrand.png" alt="Bertrand GAKIZA — Data Analyst" class="profile-photo"
+                            id="profilePhoto">
+                        <div class="image-border-glow"></div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-python"></i> Python
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-chart-bar"></i> Power BI
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-database"></i> SQL
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">À propos de <span class="highlight">moi</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+                    <p>
+                        Fort de deux ans d'expérience, je suis animé par la volonté de transformer des données
+                        complexes en solutions concrètes, utiles et actionnables. Ma formation en statistique,
+                        combinée à mes compétences en <strong>machine learning</strong>, <strong>modélisation
+                            prédictive</strong>
+                        et <strong>analyse avancée</strong>, m'a permis d'intervenir sur des projets variés, dans des
+                        environnements exigeants.
+                    </p>
+                    <p>
+                        Ces expériences m'ont appris à m'adapter rapidement, à comprendre les enjeux métiers
+                        et à faire de la donnée un véritable <strong>outil d'aide à la décision</strong>.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Localisation</span>
+                                <span class="info-value">Lille, France</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">bertrand.gakiza19@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <span class="info-label">Mobilité</span>
+                                <span class="info-value">France entière</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Langues</span>
+                                <span class="info-value">Français, Anglais (B1), Swahili (B2)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="cv_bertrand_gakiza.pdf" download class="btn btn-primary" id="downloadCV">
+                        <i class="fas fa-download"></i> Télécharger mon CV
+                    </a>
+                </div>
+                <div class="about-cards" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Analyse de Données</h3>
+                        <p>Exploration, nettoyage et analyses statistiques pour extraire des insights actionnables.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Modélisation prédictive, classification, régression et évaluation de modèles.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Data Visualisation</h3>
+                        <p>Création de tableaux de bord interactifs et visualisations impactantes.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Data Engineering</h3>
+                        <p>Pipelines ETL, automatisation et orchestration de flux de données.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Expériences <span class="highlight">Professionnelles</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst / Data Scientist</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> TotalEnergies
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Mars 2025 — Août 2025
+                        </span>
+                        <ul class="timeline-tasks">
+                            <li>Développement d'un outil de recommandation basé sur le Machine Learning (Python,
+                                Scikit-learn), améliorant le taux de réponse de 25% à 99%</li>
+                            <li>Analyses exploratoires et statistiques sur données</li>
+                            <li>Modélisation prédictive pour l'aide à la décision</li>
+                            <li>Support statistique R&D : tests, comparaisons, validation</li>
+                            <li>Création de tableaux de bord et visualisations pour les équipes métier</li>
+                        </ul>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-university"></i> CY Cergy Paris Université
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Mai 2024 — Juillet 2024
+                        </span>
+                        <ul class="timeline-tasks">
+                            <li>Collecte de données multi-sources</li>
+                            <li>Nettoyage, traitement et structuration des données</li>
+                            <li>Analyse des tendances et détection d'anomalies</li>
+                            <li>Conception de tableaux de bord et visualisations pour le suivi des indicateurs</li>
+                        </ul>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">SQL</span>
+                            <span class="tool-tag">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Chargé d'études statistiques</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-building"></i> General Landscape Consulting Technology
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Septembre 2022 — Août 2023
+                        </span>
+                        <ul class="timeline-tasks">
+                            <li>Conception et administration de questionnaires</li>
+                            <li>Collecte et nettoyage des données</li>
+                            <li>Analyses exploratoires et segmentation de populations</li>
+                            <li>Visualisation et interprétation des résultats statistiques</li>
+                        </ul>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">R</span>
+                            <span class="tool-tag">SPSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Chargé d'études actuarielles</h3>
+                            <span class="timeline-company">
+                                <i class="fas fa-landmark"></i> Office National des Pensions et des Risques
+                                Professionnels
+                            </span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> Août 2021 — Octobre 2021
+                        </span>
+                        <ul class="timeline-tasks">
+                            <li>Construction de tableaux de bord de prévision</li>
+                            <li>Modélisation du risque à horizon long terme (sinistralité)</li>
+                            <li>Automatisation de traitements et reporting</li>
+                        </ul>
+                        <div class="timeline-tools">
+                            <span class="tool-tag">Power BI</span>
+                            <span class="tool-tag">R</span>
+                            <span class="tool-tag">Python</span>
+                            <span class="tool-tag">Excel (VBA)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Mes <span class="highlight">Projets</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Une sélection de projets personnels démontrant mes compétences en data
+                    science et analyse de données.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GAKIZAB/etl-and-pipeline" target="_blank"
+                                rel="noopener noreferrer" aria-label="Voir sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ETL Pipeline</h3>
+                    <p class="project-description">
+                        Développement d'un pipeline ETL pour automatiser l'extraction, la transformation
+                        et le chargement de données issues de bases de données et API vers un entrepôt de données.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>SQLAlchemy</span>
+                        <span>Airflow</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GAKIZAB/railsmartanalysis" target="_blank"
+                                rel="noopener noreferrer" aria-label="Voir sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Analyse du Marché Immobilier</h3>
+                    <p class="project-description">
+                        Analyse de données immobilières pour identifier les tendances de prix,
+                        les quartiers les plus attractifs et réaliser des prédictions de valeur.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Scikit-learn</span>
+                        <span>Jupyter</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GAKIZAB/dasbord-commercial" target="_blank"
+                                rel="noopener noreferrer" aria-label="Voir sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Dashboard Commercial Interactif</h3>
+                    <p class="project-description">
+                        Création d'un tableau de bord de suivi des performances commerciales (chiffre d'affaires,
+                        objectifs, top vendeurs) pour une prise de décision rapide.
+                    </p>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>Tableau</span>
+                        <span>SQL</span>
+                        <span>DAX</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GAKIZAB/Analyzing-User-Sentiment-on-Social-Media"
+                                target="_blank" rel="noopener noreferrer" aria-label="Voir sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Analyse de Sentiment</h3>
+                    <p class="project-description">
+                        Analyse du sentiment des utilisateurs sur les réseaux sociaux concernant une marque
+                        ou un sujet spécifique, en utilisant le NLP.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NLTK</span>
+                        <span>TextBlob</span>
+                        <span>Transformers</span>
+                        <span>Tweepy</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/GAKIZAB/detection-de-fraude-bancaire" target="_blank"
+                                rel="noopener noreferrer" aria-label="Voir sur GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Détection de Fraude Bancaire</h3>
+                    <p class="project-description">
+                        Mise en place d'un modèle de Machine Learning pour détecter des transactions
+                        bancaires frauduleuses en temps réel.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>XGBoost</span>
+                        <span>Pandas</span>
+                        <span>Imbalanced-learn</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Mes <span class="highlight">Compétences</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Langages & Data</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SAS</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Manipulation -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <i class="fas fa-table"></i>
+                        <h3>Data Manipulation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">dplyr</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualisation -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <i class="fas fa-chart-area"></i>
+                        <h3>Visualisation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tableau</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib / Seaborn</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Looker Studio</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">XGBoost</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Big Data / Outils -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Big Data & Outils</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Apache Airflow</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Spark</span>
+                                <span class="skill-percent">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bases de données -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Bases de Données</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section id="education" class="section education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Formation & <span class="highlight">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-grid">
+                <div class="education-column" data-aos="fade-right" data-aos-delay="100">
+                    <h3 class="education-column-title">
+                        <i class="fas fa-graduation-cap"></i> Diplômes
+                    </h3>
+                    <div class="education-card">
+                        <div class="education-card-accent"></div>
+                        <div class="education-card-content">
+                            <span class="education-date">2023 — 2025</span>
+                            <h4>Master Statistique</h4>
+                            <p class="education-school">Université de Strasbourg</p>
+                            <p class="education-details">
+                                GLM, Analyse de données avancées, Machine Learning,
+                                Réseaux de neurones, Programmation statistique et
+                                data analysis (Python, R, SAS)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-card-accent"></div>
+                        <div class="education-card-content">
+                            <span class="education-date">2018 — 2021</span>
+                            <h4>Licence en Actuariat</h4>
+                            <p class="education-school">Université du Burundi</p>
+                            <p class="education-details">
+                                Mathématiques financières, Modélisation du risque et
+                                analyse de la sinistralité, Assurance & actuariat
+                                (tarification et provisionnement)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-card-accent"></div>
+                        <div class="education-card-content">
+                            <span class="education-date">2016 — 2017</span>
+                            <h4>Bac S</h4>
+                            <p class="education-school">Lycée du Lac Tanganyika, Burundi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="education-column-title">
+                        <i class="fas fa-certificate"></i> Certifications
+                    </h3>
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h4>Data Science & Machine Learning</h4>
+                            <span class="certification-year">2025</span>
+                        </div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h4>Power BI avancé</h4>
+                            <span class="certification-year">2025</span>
+                        </div>
+                    </div>
+                    <h3 class="education-column-title" style="margin-top: 2rem;">
+                        <i class="fas fa-star"></i> Atouts
+                    </h3>
+                    <div class="qualities-grid">
+                        <div class="quality-tag"><i class="fas fa-check-circle"></i> Rigueur</div>
+                        <div class="quality-tag"><i class="fas fa-check-circle"></i> Sens de l'analyse</div>
+                        <div class="quality-tag"><i class="fas fa-check-circle"></i> Travail en équipe</div>
+                        <div class="quality-tag"><i class="fas fa-check-circle"></i> Curiosité</div>
+                        <div class="quality-tag"><i class="fas fa-check-circle"></i> Esprit d'initiative</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Me <span class="highlight">Contacter</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">N'hésitez pas à me contacter pour discuter d'opportunités, de collaborations
+                    ou simplement pour échanger !</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <a href="mailto:bertrand.gakiza19@gmail.com" class="contact-card" id="contactEmail">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>Email</h4>
+                            <p>bertrand.gakiza19@gmail.com</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/bertrand-gakiza" target="_blank" rel="noopener noreferrer"
+                        class="contact-card" id="contactLinkedIn">
+                        <div class="contact-card-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>LinkedIn</h4>
+                            <p>@bertrand-gakiza</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+                    <a href="https://github.com/GAKIZAB" target="_blank" rel="noopener noreferrer" class="contact-card"
+                        id="contactGitHub">
+                        <div class="contact-card-icon github">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>GitHub</h4>
+                            <p>@GAKIZAB</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+                    <a href="tel:+33751573063" class="contact-card" id="contactPhone">
+                        <div class="contact-card-icon phone">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-card-text">
+                            <h4>Téléphone</h4>
+                            <p>07 51 57 30 63</p>
+                        </div>
+                        <i class="fas fa-arrow-right contact-arrow"></i>
+                    </a>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="formName">Nom complet</label>
+                            <input type="text" id="formName" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Email</label>
+                            <input type="email" id="formEmail" name="email" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Sujet</label>
+                            <input type="text" id="formSubject" name="subject" placeholder="Objet de votre message">
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" placeholder="Votre message..." rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitForm">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>BG<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Conçu et développé par <strong>Bertrand GAKIZA</strong> &copy; 2025. Tous droits réservés.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/bertrand-gakiza" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/GAKIZAB" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:bertrand.gakiza19@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
