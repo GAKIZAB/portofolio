@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="180" fill="url(#bgGrad)"/>
+  
+  <!-- ETL Pipeline Flow Diagram -->
+  <!-- Source Database -->
+  <rect x="20" y="65" width="70" height="50" rx="8" fill="#4f46e5" opacity="0.9"/>
+  <text x="55" y="85" text-anchor="middle" fill="white" font-size="10" font-family="Inter, sans-serif" font-weight="600">SOURCE</text>
+  <text x="55" y="100" text-anchor="middle" fill="white" font-size="8" font-family="Inter, sans-serif">DB/API</text>
+  
+  <!-- Arrow 1 -->
+  <polygon points="100,82 115,90 100,98" fill="#6366f1"/>
+  <rect x="95" y="87" width="15" height="6" fill="#6366f1"/>
+  
+  <!-- Extract -->
+  <rect x="125" y="60" width="60" height="60" rx="10" fill="url(#primaryGrad)"/>
+  <text x="155" y="85" text-anchor="middle" fill="white" font-size="11" font-family="Inter, sans-serif" font-weight="700">EXTRACT</text>
+  <text x="155" y="100" text-anchor="middle" fill="white" font-size="8" font-family="Inter, sans-serif">Raw Data</text>
+  
+  <!-- Arrow 2 -->
+  <polygon points="195,82 210,90 195,98" fill="#6366f1"/>
+  <rect x="190" y="87" width="15" height="6" fill="#6366f1"/>
+  
+  <!-- Transform -->
+  <rect x="220" y="60" width="60" height="60" rx="10" fill="url(#primaryGrad)"/>
+  <text x="250" y="85" text-anchor="middle" fill="white" font-size="11" font-family="Inter, sans-serif" font-weight="700">TRANSFORM</text>
+  <text x="250" y="100" text-anchor="middle" fill="white" font-size="8" font-family="Inter, sans-serif">Clean &amp; Process</text>
+  
+  <!-- Arrow 3 -->
+  <polygon points="290,82 305,90 290,98" fill="#6366f1"/>
+  <rect x="285" y="87" width="15" height="6" fill="#6366f1"/>
+  
+  <!-- Load -->
+  <rect x="315" y="60" width="60" height="60" rx="10" fill="#06b6d4" opacity="0.9"/>
+  <text x="345" y="85" text-anchor="middle" fill="white" font-size="11" font-family="Inter, sans-serif" font-weight="700">LOAD</text>
+  <text x="345" y="100" text-anchor="middle" fill="white" font-size="8" font-family="Inter, sans-serif">Data Warehouse</text>
+  
+  <!-- Bottom stats -->
+  <text x="200" y="155" text-anchor="middle" fill="#64748b" font-size="12" font-family="JetBrains Mono, monospace">Pipeline ETL Automatisé | 99.5% Uptime</text>
+</svg>

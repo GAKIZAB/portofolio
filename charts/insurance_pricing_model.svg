@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="180" fill="url(#bgGrad7)"/>
+  
+  <!-- Title -->
+  <text x="20" y="22" fill="#0f172a" font-size="12" font-family="Inter, sans-serif" font-weight="600">Insurance Pricing Model - Prédiction des Primes</text>
+  
+  <!-- Left: Feature Importance Chart -->
+  <rect x="20" y="32" width="200" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="120" y="48" text-anchor="middle" fill="#0f172a" font-size="9" font-family="Inter, sans-serif" font-weight="600">Importance des Variables</text>
+  
+  <!-- Feature bars -->
+  <text x="30" y="68" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Âge conducteur</text>
+  <rect x="30" y="72" width="160" height="10" rx="5" fill="#f1f5f9"/>
+  <rect x="30" y="72" width="140" height="10" rx="5" fill="url(#barGrad)"/>
+  <text x="175" y="80" fill="#4f46e5" font-size="8" font-family="JetBrains Mono, monospace" font-weight="600">28%</text>
+  
+  <text x="30" y="88" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Véhicule (type/puiss.)</text>
+  <rect x="30" y="92" width="160" height="10" rx="5" fill="#f1f5f9"/>
+  <rect x="30" y="92" width="115" height="10" rx="5" fill="url(#barGrad)"/>
+  <text x="150" y="100" fill="#6366f1" font-size="8" font-family="JetBrains Mono, monospace" font-weight="600">22%</text>
+  
+  <text x="30" y="108" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Historique sinistres</text>
+  <rect x="30" y="112" width="160" height="10" rx="5" fill="#f1f5f9"/>
+  <rect x="30" y="112" width="95" height="10" rx="5" fill="url(#barGrad)"/>
+  <text x="130" y="120" fill="#6366f1" font-size="8" font-family="JetBrains Mono, monospace" font-weight="600">18%</text>
+  
+  <text x="30" y="128" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Localisation</text>
+  <rect x="30" y="132" width="160" height="10" rx="5" fill="#f1f5f9"/>
+  <rect x="30" y="132" width="75" height="10" rx="5" fill="url(#barGrad)"/>
+  <text x="110" y="140" fill="#06b6d4" font-size="8" font-family="JetBrains Mono, monospace" font-weight="600">15%</text>
+  
+  <!-- Right: Prediction vs Actual scatter plot -->
+  <rect x="230" y="32" width="155" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="307" y="48" text-anchor="middle" fill="#0f172a" font-size="9" font-family="Inter, sans-serif" font-weight="600">Prédictions vs Réel</text>
+  
+  <!-- Scatter plot points -->
+  <circle cx="250" cy="110" r="4" fill="#4f46e5" opacity="0.7"/>
+  <circle cx="265" cy="98" r="4" fill="#6366f1" opacity="0.7"/>
+  <circle cx="280" cy="85" r="4" fill="#4f46e5" opacity="0.7"/>
+  <circle cx="295" cy="78" r="4" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="310" cy="65" r="4" fill="#4f46e5" opacity="0.7"/>
+  <circle cx="325" cy="58" r="4" fill="#6366f1" opacity="0.7"/>
+  <circle cx="340" cy="55" r="4" fill="#06b6d4" opacity="0.7"/>
+  <circle cx="360" cy="45" r="4" fill="#4f46e5" opacity="0.7"/>
+  
+  <!-- Ideal line (y=x) -->
+  <line x1="245" y1="115" x2="365" y2="40" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,2"/>
+  
+  <!-- Axis -->
+  <line x1="245" y1="115" x2="365" y2="115" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="245" y1="40" x2="245" y2="115" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Metrics Panel Bottom -->
+  <rect x="20" y="142" width="365" height="30" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- MAPE -->
+  <rect x="30" y="147" width="70" height="20" rx="5" fill="#4f46e5" opacity="0.1"/>
+  <text x="65" y="156" text-anchor="middle" fill="#4f46e5" font-size="10" font-family="JetBrains Mono, monospace" font-weight="700">5.2%</text>
+  <text x="65" y="164" text-anchor="middle" fill="#64748b" font-size="7" font-family="Inter, sans-serif">MAPE</text>
+  
+  <!-- RMSE -->
+  <rect x="110" y="147" width="70" height="20" rx="5" fill="#6366f1" opacity="0.1"/>
+  <text x="145" y="156" text-anchor="middle" fill="#6366f1" font-size="10" font-family="JetBrains Mono, monospace" font-weight="700">€142</text>
+  <text x="145" y="164" text-anchor="middle" fill="#64748b" font-size="7" font-family="Inter, sans-serif">RMSE</text>
+  
+  <!-- R² -->
+  <rect x="190" y="147" width="70" height="20" rx="5" fill="#06b6d4" opacity="0.1"/>
+  <text x="225" y="156" text-anchor="middle" fill="#06b6d4" font-size="10" font-family="JetBrains Mono, monospace" font-weight="700">0.91</text>
+  <text x="225" y="164" text-anchor="middle" fill="#64748b" font-size="7" font-family="Inter, sans-serif">R² Score</text>
+  
+  <!-- Model info -->
+  <rect x="270" y="147" width="105" height="20" rx="5" fill="#22c55e" opacity="0.15"/>
+  <text x="322" y="156" text-anchor="middle" fill="#22c55e" font-size="9" font-family="Inter, sans-serif" font-weight="600">XGBoost Regressor</text>
+  <text x="322" y="164" text-anchor="middle" fill="#64748b" font-size="7" font-family="Inter, sans-serif">Modèle sélectionné</text>
+</svg>

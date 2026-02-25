@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" width="400" height="180">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="rocGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4f46e5"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="180" fill="url(#bgGrad5)"/>
+  
+  <!-- Title -->
+  <text x="20" y="22" fill="#0f172a" font-size="12" font-family="Inter, sans-serif" font-weight="600">Détection de Fraude - Performance Modèle</text>
+  
+  <!-- ROC Chart Area -->
+  <rect x="20" y="35" width="250" height="135" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Axis labels -->
+  <text x="145" y="158" text-anchor="middle" fill="#64748b" font-size="9" font-family="Inter, sans-serif">Taux de Faux Positifs (FPR)</text>
+  <text x="35" y="95" fill="#64748b" font-size="9" font-family="Inter, sans-serif" transform="rotate(-90, 35, 95)">Taux de Vrais Positifs (TPR)</text>
+  
+  <!-- Chart grid lines -->
+  <line x1="50" y1="145" x2="260" y2="145" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="50" y1="125" x2="260" y2="125" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="105" x2="260" y2="105" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="85" x2="260" y2="85" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="65" x2="260" y2="65" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="50" y1="45" x2="260" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <line x1="50" y1="145" x2="50" y2="45" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="102" y1="145" x2="102" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="154" y1="145" x2="154" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="206" y1="145" x2="206" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="258" y1="145" x2="258" y2="45" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Random baseline (diagonal) -->
+  <line x1="50" y1="145" x2="260" y2="45" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="250" y="65" fill="#94a3b8" font-size="8" font-family="Inter, sans-serif">Aléatoire</text>
+  
+  <!-- ROC Curve -->
+  <path d="M 50,145 Q 60,142 70,138 T 90,128 Q 110,115 130,95 T 170,70 Q 200,55 230,50 L 260,48" 
+        fill="none" stroke="url(#rocGrad)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Data points on curve -->
+  <circle cx="70" cy="138" r="4" fill="#4f46e5" stroke="white" stroke-width="2"/>
+  <circle cx="110" cy="115" r="4" fill="#6366f1" stroke="white" stroke-width="2"/>
+  <circle cx="170" cy="70" r="4" fill="#06b6d4" stroke="white" stroke-width="2"/>
+  <circle cx="260" cy="48" r="4" fill="#4f46e5" stroke="white" stroke-width="2"/>
+  
+  <!-- Metrics Panel -->
+  <rect x="280" y="35" width="105" height="135" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="332" y="55" text-anchor="middle" fill="#0f172a" font-size="10" font-family="Inter, sans-serif" font-weight="600">Métriques</text>
+  
+  <!-- AUC -->
+  <rect x="290" y="65" width="85" height="32" rx="6" fill="#4f46e5" opacity="0.1"/>
+  <text x="332" y="80" text-anchor="middle" fill="#4f46e5" font-size="14" font-family="JetBrains Mono, monospace" font-weight="700">0.982</text>
+  <text x="332" y="92" text-anchor="middle" fill="#64748b" font-size="8" font-family="Inter, sans-serif">AUC-ROC</text>
+  
+  <!-- Precision -->
+  <rect x="290" y="102" width="85" height="32" rx="6" fill="#06b6d4" opacity="0.1"/>
+  <text x="332" y="117" text-anchor="middle" fill="#06b6d4" font-size="14" font-family="JetBrains Mono, monospace" font-weight="700">96.4%</text>
+  <text x="332" y="129" text-anchor="middle" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Précision</text>
+  
+  <!-- Recall -->
+  <rect x="290" y="139" width="85" height="25" rx="6" fill="#6366f1" opacity="0.1"/>
+  <text x="332" y="152" text-anchor="middle" fill="#6366f1" font-size="14" font-family="JetBrains Mono, monospace" font-weight="700">94.8%</text>
+  <text x="332" y="161" text-anchor="middle" fill="#64748b" font-size="8" font-family="Inter, sans-serif">Recall</text>
+</svg>
