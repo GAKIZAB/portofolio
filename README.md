@@ -18,67 +18,12 @@ portefolio/
 └── README.md         # Ce fichier
 ```
 
-## 🚀 Mise en ligne sur GitHub Pages
 
-### Étape 1 : Créer un repo GitHub
 
-```bash
-git init
-git add .
-git commit -m "🚀 Portfolio - première version"
-```
-
-### Étape 2 : Pousser vers GitHub
-
-```bash
-git remote add origin https://github.com/GAKIZAB/portfolio.git
-git branch -M main
-git push -u origin main
-```
-
-### Étape 3 : Activer GitHub Pages
-
-1. Allez dans **Settings** > **Pages** sur votre repo GitHub
-2. Sous **Source**, sélectionnez **main** branch
-3. Cliquez sur **Save**
-4. Votre site sera accessible à : `https://gakizab.github.io/portfolio/`
+Site : [https://gakizab.github.io/portfolio/](https://gakizab.github.io/portofolio/)
 
 ## 📝 Personnalisation
 
-### Photo de profil
-Utilisez le fichier `bertrand.png` ou remplacez-le par votre propre photo.
-
 ### CV PDF
-Le CV est accessible via le fichier `CV_Bertrand_GAKIZA.pdf`.
+`CV_Bertrand_GAKIZA.pdf`
 
-### Couleurs
-Les couleurs sont définies dans les variables CSS au début de `style.css`. Modifiez les variables `--accent-primary` et `--accent-secondary` pour changer le thème.
-
-## 🛠️ Technologies utilisées
-
-- **HTML5** — Structure sémantique
-- **CSS3** — Animations, responsive design, variables CSS
-- **JavaScript** — Vanilla JS, Intersection Observer API
-- **AOS** — Bibliothèque d'animations au scroll
-- **Font Awesome** — Icônes
-- **Google Fonts** — Inter & JetBrains Mono
-
-## ✨ Fonctionnalités
-
-- ✅ Design dark premium avec accents bleu/violet
-- ✅ Effet de typing animé dans le hero
-- ✅ Particules flottantes en arrière-plan
-- ✅ Barres de progression animées pour les compétences
-- ✅ Compteurs animés (counter up)
-- ✅ Timeline interactive pour l'expérience
-- ✅ Cartes de projets avec effets hover
-- ✅ Navigation sticky avec blur
-- ✅ Menu responsive (hamburger)
-- ✅ Bouton retour en haut
-- ✅ Formulaire de contact
-- ✅ 100% responsive (mobile, tablette, desktop)
-- ✅ Optimisé SEO
-
-
-
-© 2025 Bertrand GAKIZA
