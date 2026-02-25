@@ -2,7 +2,7 @@
 
 ## Data Analyst & Data Scientist
 
-Portfolio professionnel en ligne présentant mon parcours, mes compétences et mes projets en data science.
+Portfolio présentant mon parcours, mes compétences et mes projets en data science.
 
 ---
 
@@ -18,12 +18,6 @@ portefolio/
 └── README.md         # Ce fichier
 ```
 
+Site : https://gakizab.github.io/portofolio/
 
-
-Site : [https://gakizab.github.io/portfolio/](https://gakizab.github.io/portofolio/)
-
-## 📝 Personnalisation
-
-### CV PDF
-`CV_Bertrand_GAKIZA.pdf`
 
